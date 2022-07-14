@@ -23,11 +23,11 @@ const Dropdown = ({ color }) => {
     : (bgColor = "bg-" + color + "-500");
   return (
     <>
-      <div className="flex flex-wrap">
-        <div className="w-full sm:w-6/12 md:w-4/12 px-4">
-          <div className="relative inline-flex align-middle w-full">
+      <div classNameName="flex flex-wrap">
+        <div classNameName="w-full sm:w-6/12 md:w-4/12 px-4">
+          <div classNameName="relative inline-flex align-middle w-full">
             <button
-              className={
+              classNameName={
                 "text-white font-bold uppercase text-sm px-6 py-3 rounded-xl shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 lg:hidden h-10 " +
                 bgColor
               }
@@ -44,7 +44,7 @@ const Dropdown = ({ color }) => {
             </button>
             <div
               ref={popoverDropdownRef}
-              className={
+              classNameName={
                 (dropdownPopoverShow ? "block " : "hidden ") +
                 (color === "white" ? "bg-white " : bgColor + " ") +
                 "text-base z-50 float-left py-2 list-none text-left rounded shadow-lg mt-1"
@@ -53,7 +53,7 @@ const Dropdown = ({ color }) => {
             >
               <a
                 href="/about"
-                className={
+                classNameName={
                   "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent " +
                   (color === "white" ? " text-slate-700" : "text-white")
                 }
@@ -62,7 +62,7 @@ const Dropdown = ({ color }) => {
               </a>
               <a
                 href="/blogs"
-                className={
+                classNameName={
                   "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent " +
                   (color === "white" ? " text-slate-700" : "text-white")
                 }
@@ -72,17 +72,17 @@ const Dropdown = ({ color }) => {
               </a>
               <a
                 href="/testimonials"
-                className={
+                classNameName={
                   "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent " +
                   (color === "white" ? " text-slate-700" : "text-white")
                 }
               >
                 Testimonials
               </a>
-              <div className="h-0 my-2 border border-solid border-t-0 border-slate-800 opacity-25" />
+              <div classNameName="h-0 my-2 border border-solid border-t-0 border-slate-800 opacity-25" />
               <a
                 href="/contact"
-                className={
+                classNameName={
                   "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent " +
                   (color === "white" ? " text-slate-700" : "text-white")
                 }
