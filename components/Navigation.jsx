@@ -1,8 +1,6 @@
 import React from "react";
 import Link from "next/link";
 
-import Dropdown from "./Dropdown";
-
 export const Navigation = () => {
   function myFunction() {
     let x = document.getElementById("myDropdown");
