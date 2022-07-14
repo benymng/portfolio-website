@@ -30,7 +30,7 @@ const Articles = ({ articles }) => {
 
   return (
     <div>
-      {/* <Navigation /> */}
+      <Navigation />
       <div className="max-w-screen-xl px-4 py-16 mx-auto lg:items-center flex">
         <div className="mx-auto text-center">
           <div className="grid lg:grid-cols-2 sm:grid-cols-1 gap-10">
