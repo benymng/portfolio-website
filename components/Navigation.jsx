@@ -1,5 +1,5 @@
 import React from "react";
-import Link from "next/link";
+import { Link } from "react-admin";
 
 export const Navigation = () => {
   function myFunction() {
@@ -36,11 +36,11 @@ export const Navigation = () => {
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <Link href="/blogs">Blogs</Link>
+                <a>Item 1</a>
               </li>
               <li tabIndex="0">
-                <div className="justify-between">
-                  About Me
+                <a className="justify-between">
+                  Parent
                   <svg
                     className="fill-current"
                     xmlns="http://www.w3.org/2000/svg"
@@ -50,32 +50,30 @@ export const Navigation = () => {
                   >
                     <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
                   </svg>
-                </div>
-                <ul className="p-2 z-50">
+                </a>
+                <ul className="p-2">
                   <li>
-                    <Link href="/projects">Projects</Link>
+                    <a>Submenu 1</a>
                   </li>
                   <li>
-                    <Link href="/contact">Contact</Link>
+                    <a>Submenu 2</a>
                   </li>
                 </ul>
               </li>
               <li>
-                <Link href="/testimonials">Testimonials</Link>
+                <a>Item 3</a>
               </li>
             </ul>
           </div>
-          <Link href="/" className="btn btn-ghost normal-case text-xl">
-            Benjamin Ng
-          </Link>
+          <a className="btn btn-ghost normal-case text-xl">Benjamin Ng</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal p-0">
             <li>
-              <Link href="/blogs">Blogs</Link>
+              <a href="/blogs">Blog</a>
             </li>
             <li tabIndex="0">
-              <Link>
+              <a>
                 About Me
                 <svg
                   className="fill-current"
@@ -86,25 +84,25 @@ export const Navigation = () => {
                 >
                   <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
                 </svg>
-              </Link>
-              <ul className="p-2 z-50">
+              </a>
+              <ul className="p-2">
                 <li>
-                  <Link href="/projects">Projects</Link>
+                  <a href="/projects">Projects</a>
                 </li>
                 <li>
-                  <Link href="/contact">Contact</Link>
+                  <a href="/contact">Contact</a>
                 </li>
               </ul>
             </li>
             <li>
-              <Link href="/testimonials">Testimonials</Link>
+              <a href="/testimonials">Testimonials</a>
             </li>
           </ul>
         </div>
         <div className="navbar-end">
-          <Link href="/resume" className="btn">
+          <a href="/resume" className="btn">
             Resume
-          </Link>
+          </a>
         </div>
       </div>
     </div>
